@@ -7,6 +7,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration:none;
+  color: white;
 }
 table {
     border-spacing: 0;
@@ -43,7 +44,13 @@ q:before,q:after {
 abbr,acronym { border: 0;
 }
 
-
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("img/loading.gif") no-repeat center center rgba(0,0,0,0.8)
+}
 /* Custom CSS
  * --------------------------------------- */
 body{
@@ -66,18 +73,57 @@ p{
 /* Section 1
  * --------------------------------------- */
 #section0{
-  background: url(img/kaas.jpeg) no-repeat fixed; 
+  background: url(img/header.jpg) center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #section0 h1{
-	color: #444;
+	color: #fff;
+}
+
+#section0 h2{
+  color: #fff
 }
 #section0 p{
 	color: #333;
-	opacity: 0.4;
+}
+
+.header {
+  float: left;
+  padding-left: 17%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.headerWrapper {
+
+}
+
+.title {
+  height: 200px;
+  width: 1000px;
+
+  position: fixed;
+  top: 35%;
+  bottom: 50%;
+  margin-top: -100px;
+  margin-left: 6%;
+}
+
+.socialIcons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.arrowDown {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px;
 }
 
 
@@ -102,7 +148,7 @@ p{
 /* Section 3
  * --------------------------------------- */
 #section2{
-  background: url(img/page3.jpg) no-repeat; 
+  background: url(img/overons.jpg) no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
