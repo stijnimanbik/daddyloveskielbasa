@@ -322,6 +322,16 @@ input[type=submit] {
   padding: 5px;
 }
 
+textarea {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+  width: 60%;
+  height: 200px;
+}
+
 
 @media screen and (max-width: 1000px) {
   .s2Title {

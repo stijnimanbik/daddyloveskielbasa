@@ -28,7 +28,7 @@ if ($mail_status) { ?>
 else { ?>
 	<script language="javascript" type="text/javascript">
 		alert('Bericht is niet verzonden. Is uw E-mail correct?');
-		// window.location = 'contact_page.html';
+		window.location = 'index.html';
 	</script>
 <?php
 }

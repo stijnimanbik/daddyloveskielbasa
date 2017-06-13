@@ -102,13 +102,13 @@ document.onreadystatechange = function () {
 		</div>
 		<div class="right-col">
 			<h2 class="right-title">Heeft u een vraag?</h2>
-			<form class="contact-form" action="contact.php" method="post" enctype="text/plain">
+			<form class="contact-form" action="contact.php" method="POST" enctype="text/plain">
 				<p class="contact-text">Naam:</p>
 				<input type="text" name="cf_name"/>
 				<p class="contact-text" id="email">E-Mail</p>
 				<input type="email" name="cf_email"/>
 				<p class="contact-text" id="bericht">Bericht</p>
-				<input type="text" name="cf_message" class="bericht"/>
+				<textarea name="cf_message" class="bericht"></textarea><br />
 				<input type="submit" class="contact-text" value="Verzenden" style="margin-top: 5px;" />
 			</form>
 		</div>
