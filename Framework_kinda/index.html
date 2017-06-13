@@ -5,6 +5,8 @@
 <html lang="nl">
 
 <head>
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>De Veghte</title>
 	<meta name="author" content="Stijn ter Keurs" />
@@ -60,19 +62,18 @@ document.onreadystatechange = function () {
 		</div>
 	</div>
 	<div class="section" id="section1">
-		<h1 class="s2Title"><center>Over Ons</center></h1>
-		<p class="s2Column1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-		<p class="s2Column2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid </p>
+		<h1 class="s2Title">’t Olde Stadhuus wordt Grand Café de Veghte!</h1>
+		<p class="s2Column"><br>Per 1 juni 2017 zijn wij, Raoul Seijsener en Thomas Smit, de trotse eigenaren van het horecagedeelte van het prachtige monumentale pand aan de Markt in Ommen.<br>
+			Wilt u verrast worden door een van onze speciaal biertje in combinatie met een bijpassend gerecht, vindt u het heerlijk om op het terras aan de Vecht te zitten met een goede kop koffie en appelgebak of bent u gewoon nieuwsgierig dan bent u uiteraard van harte welkom. Kwaliteit en service staan bij ons hoog in het vaandel. Wij zullen daarom ook altijd ons uiterste best doen om het u zo aangenaam mogelijk te maken. Volg ons op facebook voor onze nieuwste week specials.<br><br>
+
+			De officiële opening is over een paar weken maar aangezien wij staan te popelen om te beginnen, openen wij Grand Café de Veghte zoals het nu is. Met hier en daar wat aanpassingen hopen wij een dusdanige sfeer te creëren dat u zich bij ons op uw gemak voelt en dat u met een lach op uw gezicht weer weggaat en zeker ook weer terugkomt.</p>
+		<h1 class="s2Title">Wij zien u graag bij Grand Café de Veghte!<br>
+
+			Thomas en Raoul</h1>
 	</div>
 	<div class="section" id="section2">
 		<div class="slide" id="slide1">
 			<div class="content">
-				<div class="gallery">
-					<div class="thumbnails">
-						<img onmouseover="preview.src=img1.src" name="img1" src="menukaart/broodjes_lunch.jpg" alt=""/>
-						<img onmouseover="preview.src=img2.src" name="img2" src="menukaart/divers_lunch.jpg" alt=""/>
-					</div>
-				</div>
 				<div class="preview">
 					<img name="preview" src="menukaart/broodjes_lunch.jpg" alt=""/>
 				</div>
@@ -80,12 +81,6 @@ document.onreadystatechange = function () {
 		</div>
 		<div class="slide" id="slide2">
 			<div class="content">
-				<div class="gallery">
-					<div class="thumbnails">
-						<img onmouseover="preview.src=img1.src" name="img1" src="menukaart/broodjes_lunch.jpg" alt=""/>
-						<img onmouseover="preview.src=img2.src" name="img2" src="menukaart/divers_lunch.jpg" alt=""/>
-					</div>
-				</div>
 				<div class="preview">
 					<img name="preview" src="menukaart/broodjes_lunch.jpg" alt=""/>
 				</div>
@@ -107,14 +102,14 @@ document.onreadystatechange = function () {
 		</div>
 		<div class="right-col">
 			<h2 class="right-title">Heeft u een vraag?</h2>
-			<form class="contact-form">
+			<form class="contact-form" action="contact.php" method="post" enctype="text/plain">
 				<p class="contact-text">Naam:</p>
-				<input type="text"></input>
+				<input type="text" name="cf_name"/>
 				<p class="contact-text" id="email">E-Mail</p>
-				<input type="email"></input>
+				<input type="email" name="cf_email"/>
 				<p class="contact-text" id="bericht">Bericht</p>
-				<input type="text" class="bericht"></input>
-				<input type="submit" name="submit" class="contact-text" style="margin-top: 5px;"></input>
+				<input type="text" name="cf_message" class="bericht"/>
+				<input type="submit" class="contact-text" value="Verzenden" style="margin-top: 5px;" />
 			</form>
 		</div>
 	</div>

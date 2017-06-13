@@ -194,3 +194,19 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
 }
+
+@media screen and (max-width: 415px) {
+    .fp-controlArrow.fp-next {
+        right: 15px;
+        border-width: 18.5px 0 18.5px 14px;
+        border-color: transparent transparent transparent #fff;
+        opacity: 0.6;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 15px;
+        width: 0;
+        border-width: 18.5px 14px 18.5px 0;
+        border-color: transparent #fff transparent transparent;
+        opacity: 0.6;
+    }
+}

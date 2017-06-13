@@ -62,7 +62,7 @@ h1{
 	font-size: 6em;
 }
 p{
-	font-size: 2em;
+	font-size: 1.6em;
 }
 .content{
 	position: relative;
@@ -171,26 +171,21 @@ p{
 	color: #F2F2F2;
 }
 #section2 p{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .s2Title {
-
+  text-align: center;
+  font-size: 3em;
+  padding-top: 1.5%;
 }
 
-.s2Column1 {
+.s2Column {
   text-align: justify;
-  max-width: 40%;
-  float: left;
-  padding-right: 8%;
-  padding-left: 2%;
-}
+  max-width: 80%;
+  padding-right: 10%;
+  padding-left: 10%;
 
-.s2Column2 {
-  text-align: justify;
-  max-width: 40%;
-  float: left;
-  padding-left: 8%;
 }
 
 .thumbnails img {
@@ -309,7 +304,7 @@ input[type=email] {
 }
 
 input[type=text].bericht {
-  line-height: 100px;
+  line-height: 10%;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 4px;
@@ -325,4 +320,39 @@ input[type=submit] {
   border-radius: 4px;
   color: white;
   padding: 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .s2Title {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1.2em;
+  }
+
+  .preview img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .s2Title {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  .preview img {
+    max-width: 98%;
+  }
 }

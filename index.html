@@ -1,51 +1,131 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>De Veghte</title>
+<!-- De Veghte -->
+<!-- Stijn ter Keurs -->
+<!-- stijniman1999@Gmail.com -->
+<html lang="nl">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>De Veghte</title>
+	<meta name="author" content="Stijn ter Keurs" />
+	<meta name="description" content="Onepage wenbsite by Stijn ter Keurs. Made for De Veghte" />
+	<meta name="keywords"  content="De veghte, Ommen, Eten, Culinair, Grand Cafe, Ommen overijssel, Gemeente Ommen, De Vecht" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<script src="https://use.fontawesome.com/5a7d1a8598.js"></script>
+	<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div class="page1">
-<!-- Menu -->
-	<div class="topMenu">
-		<p class="topMenuItem" id="topMenuItem1" align="center">Menu2</p>
-		<h2 class="siteTitle" align="center">De Veghte</h2>
-		<p class="topMenuItem" id="topMenuItem2" align="center">Menu 1</p>
-	</div>
-<!-- /Menu -->
+<div id="load"></div>
+<script type="text/javascript">
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('fullpage').style.visibility="visible";
+      },1000);
+  }
+}
+</script>
 
-<!-- Header image -->
-	<div class="headerImageWrapper">
-		<img src="img/header.jpeg" class="headerImage">
-	</div>
-<!-- /Header image -->
-</div>
-<!-- /Page 1 -->
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="titleWrapper">
+			<h1 class="title">Ervaar Culinair Ommen.</h1>
+		</div>
+		<div class="socialIcons">
+			<a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="padding-left: 5px;"></i></a>
+			<a href="http://instagram.com" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="padding-left: 5px;"></i></a>
+			<a href="#firstPage"><i onclick="mail()" class="fa fa-envelope fa-2x" aria-hidden="true" style="padding-left: 5px;"></i></a>
+			<a href="#firstPage"><i onclick="phone()" class="fa fa-phone-square fa-2x" aria-hidden="true" style="padding-left: 5px;padding-right: 5px;"></i></a>
 
-<!-- Page 2 -->
-<div class="page2">
-	<div class="menu">
-		<h1 class="menuTitle">Menu</h1>
-		<div class="menuItems">
-			<div class="voorGerechten">
-				<h2>Jo</h2>
-				<p>Kaas</p>
+			<script type="text/javascript">
+				function mail() {
+					alert("info@grandcafedeveghte.nl");
+				}
+
+				function phone() {
+					alert("06-15458377");
+				}
+			</script>
+		</div>
+		<div class="arrowDown">
+		<a href="#secondPage"><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<h1 class="s2Title">’t Olde Stadhuus wordt Grand Café de Veghte!</h1>
+		<p class="s2Column"><br>Per 1 juni 2017 zijn wij, Raoul Seijsener en Thomas Smit, de trotse eigenaren van het horecagedeelte van het prachtige monumentale pand aan de Markt in Ommen.<br>
+			Wilt u verrast worden door een van onze speciaal biertje in combinatie met een bijpassend gerecht, vindt u het heerlijk om op het terras aan de Vecht te zitten met een goede kop koffie en appelgebak of bent u gewoon nieuwsgierig dan bent u uiteraard van harte welkom. Kwaliteit en service staan bij ons hoog in het vaandel. Wij zullen daarom ook altijd ons uiterste best doen om het u zo aangenaam mogelijk te maken. Volg ons op facebook voor onze nieuwste week specials.<br><br>
+
+			De officiële opening is over een paar weken maar aangezien wij staan te popelen om te beginnen, openen wij Grand Café de Veghte zoals het nu is. Met hier en daar wat aanpassingen hopen wij een dusdanige sfeer te creëren dat u zich bij ons op uw gemak voelt en dat u met een lach op uw gezicht weer weggaat en zeker ook weer terugkomt.</p>
+		<h1 class="s2Title">Wij zien u graag bij Grand Café de Veghte!<br>
+
+			Thomas en Raoul</h1>
+	</div>
+	<div class="section" id="section2">
+		<div class="slide" id="slide1">
+			<div class="content">
+				<div class="preview">
+					<img name="preview" src="menukaart/broodjes_lunch.jpg" alt=""/>
+				</div>
 			</div>
-			<div class="hoofdGerechten">
-				<h2>Jo</h2>
-				<p>Kaas2</p>
+		</div>
+		<div class="slide" id="slide2">
+			<div class="content">
+				<div class="preview">
+					<img name="preview" src="menukaart/broodjes_lunch.jpg" alt=""/>
+				</div>
 			</div>
-			<div class="naGerechten">
-				<h2>Jo</h2>
-				<p>Kaas3</p>
-			</div>
-			<div class="dranken">
-				<h2>Jo</h2>
-				<p>Kaas4</p>
-			</div>
+		</div>
+		</div>
+	<div class="section" id="section3">
+		<h1><center>Contact</center></h1>
+		<div class="left-col">
+			<h2 class="left-title">NAW-Gegevens</h2>
+			<ul class="contact">
+				<li><i class="fa fa-map-marker fa-2x contactIcons" aria-hidden="true"></i>Ommerweg 69, 7235SX Ommen</li>
+				<li><i class="fa fa-globe fa-2x contactIcons" aria-hidden="true"></i>Nederland</li>
+				<li><i class="fa fa-phone fa-2x contactIcons" aria-hidden="true"></i>0546-420-69</li>
+				<li><i class="fa fa-facebook-square fa-2x contactIcons" aria-hidden="true" style="padding-left: 5px;"></i>@De Veghte</li>
+				<li><i class="fa fa-instagram fa-2x contactIcons" aria-hidden="true" style="padding-left: 5px;"></i>@De Veghte</li>
+				<li><i onclick="mail()" class="fa fa-envelope fa-2x contactIcons" aria-hidden="true" style="padding-left: 5px;"></i>info@deveghte.nl</li>
+			</ul>
+		</div>
+		<div class="right-col">
+			<h2 class="right-title">Heeft u een vraag?</h2>
+			<form class="contact-form" action="contact.php" method="POST" enctype="text/plain">
+				<p class="contact-text">Naam:</p>
+				<input type="text" name="cf_name"/>
+				<p class="contact-text" id="email">E-Mail</p>
+				<input type="email" name="cf_email"/>
+				<p class="contact-text" id="bericht">Bericht</p>
+				<textarea name="cf_message" class="bericht"></textarea>
+				<input type="submit" class="contact-text" value="Verzenden" style="margin-top: 5px;" />
+			</form>
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		css3:true
+	});
+
+</script>
+<footer>
+	Stijn ter Keurs
+</footer>
 </body>
 </html>
